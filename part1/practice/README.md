@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+ package.json 文件，定义了当前项目所需要的各种模块，以及项目的配置信息（比如名称、版本、许可证等）。当运行 npm install命令时，会根据文件中的配置自动下载所需的模块配置项目所需的运行和开发环境。
+
+ package.json文件是一个JSON对象，该对象的每一个成员就是当前项目的一项设置。比如name就是项目名称，version是版本号。dependencies版本依赖
+ 更改后需要npm install 重新安装依赖
+
+ package-lock.json 目的是对整个依赖树进行版本固定的（锁死），会在 npm 更改 node_modules 目录树 或者 package.json 时自动生成的 ，它准确的描述了当前项目 npm 包的依赖树，并且在随后的安装中会根据 package-lock.json 来安装，保证是相同的一个依赖树，不考虑这个过程中是否有某个依赖有小版本的更新。项目中有 package-lock.json 文件，会根据 package-lock.json 里的内容来处理和安装依赖而不再根据 package.json，除非对 package.json 中依赖的版本进行了修改。
+
+注意，使用cnpm install时候，并不会生成 package-lock.json 文件，也不会根据 package-lock.json 来安装依赖包，还是会使用 package.json 来安装。
