@@ -1,23 +1,4 @@
-//this is work for part2
-
-// import Note from './components/Note'
-// const App = ({ notes }) => {
-  
-//     return (
-//       <div>
-//         <h1>Notes</h1>
-//         <ul>
-//         {notes.map(note =>
-//           <Note key={note.id} note={note} />//必须为Note组件定义key属性，而不是像以前那样为li标签定义。
-//         )}
-//         {/* 由map方法生成的元素，必须有一个唯一的键值：一个叫做key的属性。 */}
-//       </ul>
-//       </div>
-//     )
-//   }
-  
-//   export default App
-
+//homework 2.1-2.5
 import Courses from "./components/Courses"
 
 const App = () => {
